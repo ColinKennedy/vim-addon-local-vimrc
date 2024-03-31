@@ -4,7 +4,7 @@ if !exists('g:local_vimrc') | let g:local_vimrc = {} | endif | let s:c = g:local
 " using .vimrc because most systems support local and user global
 " configuration files. They rarely differ in name.
 " Users will instantly understand what it does.
-let s:c.names = get(s:c, 'names', ['.vimrc'])
+let s:c.names = get(s:c, 'names', ['.vimrc', '.vimrc.lua'])
 
 let s:c.hash_fun = get(s:c,'hash_fun','LVRHashOfFile')
 let s:c.cache_file = get(s:c,'cache_file', $HOME.'/.vim_local_rc_cache')
